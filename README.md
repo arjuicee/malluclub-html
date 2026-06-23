@@ -1,6 +1,22 @@
 # Mallu Club (Static Website)
 
-This repo is a **static, production-ready landing site** for Mallu Club.
+Production-ready landing site for [Mallu Club](https://malludiscord.shop/) — Kerala's Malayalam Discord community.
+
+## Project structure
+
+```
+├── index.html              # Home page
+├── privacy-policy.html     # Privacy policy
+├── terms.html              # Terms of service
+├── css/
+│   └── styles.css          # Shared styles
+├── js/
+│   └── main.js             # Navigation & UI behavior
+├── logo.png                # Site logo & favicon
+├── robots.txt
+├── sitemap.xml
+└── site.webmanifest
+```
 
 ## Run locally
 
@@ -10,25 +26,27 @@ From the project folder:
 py -m http.server 5174
 ```
 
-Open:
-- `http://localhost:5174/index.html`
+Open [http://localhost:5174/](http://localhost:5174/)
 
-## Production settings (already wired)
+## Production settings
 
-- **Canonical**: `https://malludiscord.shop/`
-- **Robots**: `robots.txt` includes `Sitemap: https://malludiscord.shop/sitemap.xml`
-- **Sitemap**: `sitemap.xml` uses absolute URLs for:
-  - `/`
-  - `/privacy-policy.html`
-  - `/terms.html`
-- **OpenGraph/Twitter image**: `https://malludiscord.shop/hero.webp`
-- **Discord invite**: `https://discord.gg/5CzssQQZeu`
+| Setting | Value |
+|---------|-------|
+| Canonical URL | `https://malludiscord.shop/` |
+| Discord invite | `https://discord.gg/pnkGM8q9VA` |
+| OpenGraph image | `https://malludiscord.shop/hero.webp` |
+| Sitemap | `https://malludiscord.shop/sitemap.xml` |
 
 ## Deploy
 
-Upload the files to any static host (Netlify / Vercel / GitHub Pages / Cloudflare Pages / cPanel).
+Upload all files to any static host (Vercel, Netlify, GitHub Pages, Cloudflare Pages, cPanel).
 
-Make sure:
-- `hero.webp` and `logo.png` are at the site root
-- `site.webmanifest`, `robots.txt`, and `sitemap.xml` are also at the site root
+Ensure these are at the site root:
 
+- `logo.png`
+- `hero.webp` (recommended for social sharing previews)
+- `robots.txt`, `sitemap.xml`, `site.webmanifest`
+
+## Live preview
+
+Deployed at [malluclub-html.vercel.app](https://malluclub-html.vercel.app)
